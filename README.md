@@ -11,7 +11,21 @@ The pose estimation of the Adafruit 9DOF IMU Breakout Board was performed accomp
 4. Sensor Fusion and Pose Estimation
 5. Pose Representation on remote machine
 
-##
+## Driver
+
+Adafruit provides embedded programmer with a C++ Adafruit Sensor library. I wanted to try to develop my own one-off driver to practice driver development but the Unified library is better to use because the off-the-shelf library allow the embedded developer to switch in between sensor without worrying about data formata, unit of measure etc...
+
+## Hardware
+
+***Adafruit 9 DOF IMU Breakout Board*** embedding:
+* L3DG20H
+* LSM303DLHC
+
+***Raspeberry Pi 3 Model B***
+
+***Remote Laptop***
+
+
 
 
 
