@@ -1,5 +1,5 @@
 # My pose estimation
-This repository contains the code developed as internship work at Polytechnic Marche University during the A.Y. 2017/2018 as partial fulfillment of the requirement for my Bachelor's degree.
+This repository contains the code developed as my internship work at Polytechnic Marche University during the A.Y. 2017/2018 as partial fulfillment of the requirement for my Bachelor's degree.
 
 ## Duties
 
@@ -13,7 +13,7 @@ The pose estimation of the Adafruit 9DOF IMU Breakout Board was performed accomp
 
 ## Driver
 
-Adafruit provides embedded programmer with a C++ Adafruit Sensor library. I wanted to try to develop my own one-off driver to practice driver development but the Unified library is better to use because the off-the-shelf library allow the embedded developer to switch in between sensor without worrying about data formata, unit of measure etc...
+Adafruit provides embedded programmer with a C++ [Adafruit Unified Sensor Library](https://github.com/adafruit/Adafruit_Sensor). I wanted to try to develop my own one-off driver to practice driver development but the Unified Driver still remain the best choice. Infact the Adafruit off-the-shelf library allows the embedded developer to switch in between sensors without worrying about data formata, unit of measure etc... according to the programmer needs. More details can be found [here](https://learn.adafruit.com/using-the-adafruit-unified-sensor-driver/introduction)
 
 ## Hardware
 
@@ -30,6 +30,15 @@ Adafruit provides embedded programmer with a C++ Adafruit Sensor library. I want
 ***Remote Laptop***
 
 
+## Software
 
+Python
 
+Matlab
+
+## Protocols
+
+The communication with 9DOF Breakout Board takes place with an I2C protocol. Python provides the ***smbus*** library to enable data writing and reading of the I2C sensors registers.
+
+The comunication between Raspberry Pi and the Remote Desktop is implemeted using an UDP protocol. The Raspberry Python client includes the package socket to implement a UDP protocol. The Matlab remote Server uses a UDP buffer to asynchronously read the (Roll, Pitch, Yaw) data.
 
