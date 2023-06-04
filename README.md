@@ -17,6 +17,8 @@ Adafruit provides embedded programmer with a C++ Adafruit Sensor library. I want
 
 ## Hardware
 
+![Internship_BG](https://github.com/Acefrrag/My-pose-estimation/assets/59066474/5091b578-ea42-462f-ad95-1bd6ef2f5839)
+
 ***Adafruit 9 DOF IMU Breakout Board*** embedding:
 * L3DG20H
 * LSM303DLHC
