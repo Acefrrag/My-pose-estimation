@@ -13,7 +13,7 @@ The pose estimation of the Adafruit 9DOF IMU Breakout Board was performed accomp
 
 ## Driver
 
-Adafruit provides embedded programmer with an Arduino C++ [Adafruit Unified Sensor Library](https://github.com/adafruit/Adafruit_Sensor). I wanted to try to develop my own one-off driver on Raspberry Pi to practice driver development but the Unified Driver still remain the best choice as described [here](https://learn.adafruit.com/using-the-adafruit-unified-sensor-driver/introduction). I took inspiration from TonyDiCola Raspberry Pi drivers (see the Credits section).
+I developed my own one-off driver on Raspberry Pi to practice driver development. I took inspiration from TonyDiCola Raspberry Pi drivers (see the Credits section).
 
 ## Hardware
 
