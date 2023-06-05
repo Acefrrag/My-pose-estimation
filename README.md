@@ -1,5 +1,5 @@
 # My pose estimation
-This repository contains the code developed as my internship work at Polytechnic Marche University during the A.Y. 2017/2018 as partial fulfillment of the requirement for my Bachelor's degree.
+This repository contains the code developed during my internship work at Polytechnic Marche University during the A.Y. 2017/2018 as partial fulfillment of the requirement for my Bachelor's degree.
 
 ## Duties
 
@@ -13,7 +13,7 @@ The pose estimation of the Adafruit 9DOF IMU Breakout Board was performed accomp
 
 ## Driver
 
-Adafruit provides embedded programmer with a C++ [Adafruit Unified Sensor Library](https://github.com/adafruit/Adafruit_Sensor). I wanted to try to develop my own one-off driver to practice driver development but the Unified Driver still remain the best choice. More details can be found [here](https://learn.adafruit.com/using-the-adafruit-unified-sensor-driver/introduction)
+Adafruit provides embedded programmer with a C++ [Adafruit Unified Sensor Library](https://github.com/adafruit/Adafruit_Sensor). I wanted to try to develop my own one-off driver to practice driver development but the Unified Driver still remain the best choice as described [here](https://learn.adafruit.com/using-the-adafruit-unified-sensor-driver/introduction).
 
 ## Hardware
 
