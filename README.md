@@ -41,25 +41,31 @@ The communication with 9DOF Breakout Board takes place with an I2C protocol. Ras
 
 The comunication between Raspberry Pi and the Remote Desktop is implemeted using an UDP protocol. The Raspberry Python client includes the package socket to implement a UDP protocol. The Matlab remote Server uses a UDP buffer to asynchronously read the (Roll, Pitch, Yaw) data.
 
+## Attitude Estimation
+
+The attitude estimation consists in the computation of the Euler angles starting from the reading of the sensors. Specifically the Tait-Bryan angles (sequence x, y', z'') were computed.
+
 ## Sensor Fusion Algorithm
 
 These algorithm try to get the most from every sensor used in attitude estimation.
 
-### "Stamdard"
+### "Standard"
 
-This is the most naive sensor fusion algorithm implemented. It does not exists in the literature and it does not have a real name. The concept consists in appling a low-pass filter and high-pass filter with the same cut-off frequency F_{c} respectively to the gyro and to the accelerometer and magnetometer.
+This is the most naive sensor fusion algorithm implemented. It does not exists in the literature and it does not have a real name. The concept consists in appling a low-pass filter and high-pass filter with the same cut-off frequency F_{c} respectively to the gyro and to the accelerometer and magnetometer. I found it by watching some youtube videos...
 
 ### Complementary Filter
 
-The complementary filter is characterized by a parameter $\alpha$ (which can be empirically assosicated to a Standard Filter cut-off frequency)
+The complementary filter is characterized by a parameter $\alpha_{CF}$ (which can be empirically assosicated to a Standard Filter cut-off frequency).
 
 ### Corrected Complementary Filter
 
-For the speci
+The estimation of the pose consists in the Euler angles estimation of a rigid body. Euler angles do have discontinuity, hence the complementary filters out the sudden jump producing incorrect pose estimation readings. The complementary filter is disabled when approaching this discontinuity.
 
 ### Final Filter
 
 The final filter consisted in the combination of the Corrected Complementary Filter and the Standard filter.
+
+## 
 
 
 
