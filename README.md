@@ -13,7 +13,7 @@ The pose estimation of the Adafruit 9DOF IMU Breakout Board was performed accomp
 
 ## Driver
 
-Adafruit provides embedded programmer with a C++ [Adafruit Unified Sensor Library](https://github.com/adafruit/Adafruit_Sensor). I wanted to try to develop my own one-off driver to practice driver development but the Unified Driver still remain the best choice as described [here](https://learn.adafruit.com/using-the-adafruit-unified-sensor-driver/introduction).
+Adafruit provides embedded programmer with an Arduino C++ [Adafruit Unified Sensor Library](https://github.com/adafruit/Adafruit_Sensor). I wanted to try to develop my own one-off driver on Raspberry Pi to practice driver development but the Unified Driver still remain the best choice as described [here](https://learn.adafruit.com/using-the-adafruit-unified-sensor-driver/introduction). I took inspiration from TonyDiCola Raspberry Pi drivers (see the Credits section).
 
 ## Hardware
 
@@ -65,7 +65,9 @@ The estimation of the pose consists in the Euler angles estimation of a rigid bo
 
 The final filter consisted in the combination of the Corrected Complementary Filter and the Standard filter.
 
-## 
+## Credits
+
+The driver I developed took inspiration from the drivers developed by Tony Dicola. I thank him for the work he is doing/has done for the embedded system community.
 
 
 
