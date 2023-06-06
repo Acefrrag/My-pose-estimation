@@ -3,7 +3,7 @@ This repository contains the code developed during my internship work at Polytec
 
 ## Duties
 
-The pose estimation of the Adafruit 9DOF IMU Breakout Board was performed accomplishing the following tasks:
+The pose estimation of the [Adafruit 9DOF IMU Breakout Board](https://www.adafruit.com/product/1714) was performed accomplishing the following tasks:
 
 1. Driver Development
 2. Raw data acquisition, data formatting, conversion to SI values
@@ -17,10 +17,9 @@ I developed my own one-off driver on Raspberry Pi to practice driver development
 
 ## Hardware
 
-
-
 <p align="center">
-<img src=https://github.com/Acefrrag/My-pose-estimation/assets/59066474/3c7604b6-5b6b-4e3d-9970-ad37e26bec53 width="50%">
+<img src=https://github.com/Acefrrag/My-pose-estimation/assets/59066474/5ebc191b-fa38-4965-97a3-f30c6742feb3
+ width="50%">
 </p>
 
 ***Adafruit 9 DOF IMU Breakout Board*** embedding:
@@ -39,9 +38,11 @@ Matlab
 
 ## Protocols
 
-The communication with 9DOF Breakout Board takes place with an I2C protocol. Raspbian-enviornment Python provides the ***smbus*** library to enable data writing and reading of the I2C sensors registers.
+The communication with 9DOF Breakout Board takes place with an I2C protocol. Raspbian-enviornment Python provides the ***<code> smbus </code>*** library to enable data writing and reading of the I2C sensors registers.
 
-The comunication between Raspberry Pi and the Remote Desktop is implemeted using an UDP protocol. The Raspberry Python client includes the package socket to implement a UDP protocol. The Matlab remote Server uses a UDP buffer to asynchronously read the (Roll, Pitch, Yaw) data.
+The comunication between Raspberry Pi and the Remote Desktop is implemeted using an UDP protocol. The Raspberry Python client includes the Python package ***<code>socket</code>*** to implement a UDP protocol.
+
+The Matlab remote Server uses a UDP buffer to asynchronously read the (Roll, Pitch, Yaw) data.
 
 ## Attitude Estimation
 
@@ -65,7 +66,7 @@ The estimation of the pose consists in the Euler angles estimation of a rigid bo
 
 ### Final Filter
 
-The final filter consisted in the combination of the Corrected Complementary Filter and the Standard filter.
+The final filter consisted in the combination of the Corrected Complementary Filter and the Standard filter. 
 
 ## Credits
 
