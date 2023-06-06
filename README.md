@@ -72,5 +72,7 @@ The final filter consisted in the combination of the Corrected Complementary Fil
 
 The driver I developed took inspiration from the drivers developed by Tony Dicola. I thank him for the work he is doing/has done for the embedded system community.
 
+This code is distributed under a MIT license.
+
 
 
