@@ -9,5 +9,6 @@ Il filtro complementare è stato perciò modificato.
 
 Roll_HP.png mostra l'orientazione di Roll del giroscopio filtrati con un passa-alto
 Roll_LP.png mostra l'orientazione di Roll dell'accelerometro filtrati con un pass-basso
+Roll_SF.png mostra l'orientazione di Roll applicando lo "Standard" filter.
 
 
