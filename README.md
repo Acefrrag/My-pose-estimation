@@ -39,9 +39,9 @@ Matlab
 
 ## Protocols
 
-The communication with 9DOF Breakout Board takes place with an I2C protocol. Raspbian-enviornment Python provides the ***<font color="red"> smbus </font>*** library to enable data writing and reading of the I2C sensors registers.
+The communication with 9DOF Breakout Board takes place with an I2C protocol. Raspbian-enviornment Python provides the ***<code> smbus </code>*** library to enable data writing and reading of the I2C sensors registers.
 
-The comunication between Raspberry Pi and the Remote Desktop is implemeted using an UDP protocol. The Raspberry Python client includes the Python package ***socket*** to implement a UDP protocol.
+The comunication between Raspberry Pi and the Remote Desktop is implemeted using an UDP protocol. The Raspberry Python client includes the Python package ***<code>socket</code>*** to implement a UDP protocol.
 
 The Matlab remote Server uses a UDP buffer to asynchronously read the (Roll, Pitch, Yaw) data.
 
@@ -67,7 +67,7 @@ The estimation of the pose consists in the Euler angles estimation of a rigid bo
 
 ### Final Filter
 
-The final filter consisted in the combination of the Corrected Complementary Filter and the Standard filter.
+The final filter consisted in the combination of the Corrected Complementary Filter and the Standard filter. 
 
 ## Credits
 
