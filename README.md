@@ -39,7 +39,7 @@ Matlab
 
 ## Protocols
 
-The communication with 9DOF Breakout Board takes place with an I2C protocol. Raspbian-enviornment Python provides the ***smbus*** library to enable data writing and reading of the I2C sensors registers.
+The communication with 9DOF Breakout Board takes place with an I2C protocol. Raspbian-enviornment Python provides the ***<font color="red">smbus</font>*** library to enable data writing and reading of the I2C sensors registers.
 
 The comunication between Raspberry Pi and the Remote Desktop is implemeted using an UDP protocol. The Raspberry Python client includes the Python package ***socket*** to implement a UDP protocol.
 
