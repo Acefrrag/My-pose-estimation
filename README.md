@@ -54,11 +54,11 @@ These algorithm try to get the most from every sensor used in attitude estimatio
 
 ### "Standard"
 
-This is the most naive sensor fusion algorithm implemented. It does not exists in the literature and it does not have a real name. The concept consists in appling a low-pass filter and high-pass filter with the same cut-off frequency F_{c} respectively to the gyro and to the accelerometer and magnetometer. I found it by watching some youtube videos...
+This is the most naive sensor fusion algorithm implemented. It does not exists in the literature and it does not have a real name. The concept consists in appling a low-pass filter and high-pass filter with the same cut-off frequency FC respectively to the gyro and to the accelerometer and magnetometer. I found it by watching some youtube videos...
 
 ### Complementary Filter
 
-The complementary filter is characterized by a parameter $\alpha_{CF}$ (which can be empirically assosicated to a Standard Filter cut-off frequency).
+The complementary filter is characterized by a parameter $\alpha_{CF}$ (empirically assosicated to a Standard Filter cut-off frequency) which distrubutes long-term vs. short-term reading to different sensors.
 
 ### Corrected Complementary Filter
 
@@ -71,6 +71,8 @@ The final filter consisted in the combination of the Corrected Complementary Fil
 ## Credits
 
 The driver I developed took inspiration from the drivers developed by Tony Dicola. I thank him for the work he is doing/has done for the embedded system community.
+
+This code is distributed under a MIT license.
 
 
 
