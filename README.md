@@ -17,10 +17,9 @@ I developed my own one-off driver on Raspberry Pi to practice driver development
 
 ## Hardware
 
-
-
 <p align="center">
-<img src=https://github.com/Acefrrag/My-pose-estimation/assets/59066474/3c7604b6-5b6b-4e3d-9970-ad37e26bec53 width="50%">
+<img src=https://github.com/Acefrrag/My-pose-estimation/assets/59066474/5ebc191b-fa38-4965-97a3-f30c6742feb3
+ width="50%">
 </p>
 
 ***Adafruit 9 DOF IMU Breakout Board*** embedding:
