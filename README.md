@@ -3,7 +3,7 @@ This repository contains the code developed during my internship work at Polytec
 
 ## Duties
 
-The pose estimation of the Adafruit 9DOF IMU Breakout Board was performed accomplishing the following tasks:
+The pose estimation of the [Adafruit 9DOF IMU Breakout Board](https://www.adafruit.com/product/1714) was performed accomplishing the following tasks:
 
 1. Driver Development
 2. Raw data acquisition, data formatting, conversion to SI values
@@ -41,7 +41,9 @@ Matlab
 
 The communication with 9DOF Breakout Board takes place with an I2C protocol. Raspbian-enviornment Python provides the ***smbus*** library to enable data writing and reading of the I2C sensors registers.
 
-The comunication between Raspberry Pi and the Remote Desktop is implemeted using an UDP protocol. The Raspberry Python client includes the package socket to implement a UDP protocol. The Matlab remote Server uses a UDP buffer to asynchronously read the (Roll, Pitch, Yaw) data.
+The comunication between Raspberry Pi and the Remote Desktop is implemeted using an UDP protocol. The Raspberry Python client includes the Python package ***socket*** to implement a UDP protocol.
+
+The Matlab remote Server uses a UDP buffer to asynchronously read the (Roll, Pitch, Yaw) data.
 
 ## Attitude Estimation
 
