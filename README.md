@@ -8,7 +8,7 @@ The pose estimation of the [Adafruit 9DOF IMU Breakout Board](https://www.adafru
 1. Driver Development
 2. Raw data acquisition, data formatting, conversion to SI values
 3. Data Calibration and Offset Computation
-4. ***Sensor Fusion and Attitude Estimation***
+4. Sensor Fusion and Attitude Estimation
 5. Pose Visualizer on remote machine
 
 ## Driver
